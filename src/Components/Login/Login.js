@@ -8,20 +8,31 @@ export default function ColorTextFields() {
   return (
     <Box
       component="form"
-      sx={{ width: "100%", height: 300 }}
+      sx={{ width: "100%", height: 550 }}
       noValidate
       autoComplete="off"
     >
       <Stack
+        height="70%"
         direction="column"
         justifyContent="center"
         alignItems="center"
         spacing={3}
       >
-        <p>LOGIN</p>
-        <TextField label="Outlined secondary" color="secondary" />
-        <TextField label="Outlined secondary" color="secondary" />
-        <Button variant="contained">LOGIN</Button>
+        <h1>Login</h1>
+        <TextField
+          sx={{ width: "27%" }}
+          label="Outlined secondary"
+          color="secondary"
+        />
+        <TextField
+          sx={{ width: "27%" }}
+          label="Outlined secondary"
+          color="secondary"
+        />
+        <Button sx={{ width: "27%" }} variant="contained">
+          LOGIN
+        </Button>
       </Stack>
     </Box>
   );
